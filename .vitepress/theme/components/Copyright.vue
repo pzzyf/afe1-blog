@@ -1,8 +1,10 @@
 <template>
     <div class="site-footer">
-        MIT Licensed | Copyright © 2021-2022 <a class="vitepress" :href="website">{{ webTitle }}</a><br />
-        Powered by <a class="vitepress" target="_blank" href="//vitepress.vuejs.org/">VitePress - 1.0.0-alpha.51</a>
-        Theme by <a class="vitepress" target="_blank" href="//github.com/airene/vitepress-blog-pure">Vitepress-blog</a>
+        MIT Licensed | Copyright © 2023-至今 <a class="vitepress" :href="website">{{ webTitle }}</a
+        ><br />
+        Powered by
+        <a class="vitepress" target="_blank" href="//vitepress.vuejs.org/">VitePress - 1.0.0-alpha.51</a> Theme by
+        <a class="vitepress" target="_blank" href="//github.com/pzzyf/blog">Vitepress-blog</a>
     </div>
 </template>
 <script lang="ts" setup>
