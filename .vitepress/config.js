@@ -12,10 +12,10 @@ export default defineConfig({
     ignoreDeadLinks: true,
     themeConfig: {
         posts: await getPosts(pageSize),
-        website: 'https://github.com/airene/vitepress-blog-pure', //copyright link
+        website: 'https://github.com/pzzyf/blog', //copyright link
         // 评论的仓库地址
         comment: {
-            repo: 'airene/vitepress-blog-pure',
+            repo: 'pzzyf/blog',
             themes: 'github-light',
             issueTerm: 'pathname'
         },
@@ -29,7 +29,7 @@ export default defineConfig({
 
         //outline:[2,3],
         outlineTitle: '文章摘要',
-        socialLinks: [{ icon: 'github', link: 'https://github.com/airene/vitepress-blog-pure' }]
+        socialLinks: [{ icon: 'github', link: 'https://github.com/pzzyf/blog' }]
     },
     srcExclude: ['README.md'], // exclude the README.md , needn't to compiler
 
