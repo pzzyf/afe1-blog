@@ -6,7 +6,7 @@ const pageSize = 10
 
 export default defineConfig({
     title: 'afe1',
-    base: 'blog',
+    base: '',
     cacheDir: './node_modules/vitepress_cache',
     description: 'vitepress,blog',
     ignoreDeadLinks: true,
