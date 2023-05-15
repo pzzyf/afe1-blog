@@ -6,6 +6,7 @@ import Tags from './components/Tags.vue'
 import Page from './components/Page.vue'
 import Comment from './components/Comment.vue'
 
+import 'vexip-ui/css/index.css'
 import './custom.css'
 
 export default {
