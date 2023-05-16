@@ -1,16 +1,15 @@
 ---
 date: 2023-05-14
-title: demo
+title: 组件库+markdown
+description: 尝试在markdown文件引入ui组件库
 tags:
 - vitpress
 - demo
-description: 尝试markdown语法
+- vexip
 ---
-# 1
+# button
+<VpDemo/>
 
-## 2
-2
-
-## 3
-3
-<Comment />
+<script setup>
+import VpDemo from '../views/VpDemo.vue'
+</script>

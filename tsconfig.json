@@ -10,7 +10,7 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "lib": ["ESNext", "DOM"],
-        "types": [],
+        "types": ["vexip-ui/types"],
         "baseUrl": "./",
         "paths": {
             "@/*": ["src/*"]
