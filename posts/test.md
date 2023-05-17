@@ -9,6 +9,7 @@ tags:
 ---
 # button
 <VpDemo/>
+<Comment />
 
 <script setup>
 import VpDemo from '../views/VpDemo.vue'
