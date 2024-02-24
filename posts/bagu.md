@@ -7,8 +7,10 @@ tags:
 
 # js
 
+## 一、数据类型
+
 <details>
-  ##<summary>js数据类型 8种</summary>
+<summary>js数据类型 8种</summary>
 基础数据类型：Null  Undefined  String  Boolean BigInt Symbol  Number
 
 引用数据类型：Object
@@ -127,3 +129,43 @@ typeof NaN为number，表示的是运算错误，失败返回的结果
 >     console.log('空对象');
 >}
 >```
+
+## 二、ES6  
+
+let、const、var的区别  
+
+- 块级作用域  
+
+>let,const有块级作用域，var没有块级作用域  
+
+- 变量提升
+
+> var存在变量提升，let，const不存在变量提升  
+
+- 给全局添加属性  
+
+> 浏览器的全局对象是window，node环境全局对象是global，var声明的变量可以在全局对象上访问，let，const不行。
+
+- 重复声明  
+
+> var可以重复声明变量，后面覆盖全面，let和const不能重复声明变量
+
+- 暂时性死区
+
+> let,const有，var没有
+
+- 初始化设置  
+
+> const需求初始化设置
+
+const定义的变量值可以修改吗
+
+> 基础数据类型不可以
+> 引用数据类型可以
+
+箭头函数this指向
+
+- 箭头函数没有自己的 this 绑定，而是继承自最近的非箭头父级作用域的 this 值  
+
+扩展运算符  
+模版字符串`${}`
