@@ -1,10 +1,10 @@
 ---
 date: 2024-02-29
-title: 面试
+title: 北京小诚互娱面经
+description: 带我八股全复习了一遍真好
 tags:  
 - 面试
 ---
-# 北京小诚互娱
 
 - 1.自我介绍  
 
@@ -188,10 +188,60 @@ tags:
 
 - vue
   - vue核心组成部分
+    - Compiler模块 template -> render
+    - Reactivity模块 响应式系统 给数据添加响应式
+    - Runtime模块 渲染系统
+      - render -> vnode
+      - 虚拟dom挂载到真实dom上
+      - patch函数，对比vnode，处理新的vnode
+  - 说一下深拷贝和浅拷贝
+    - 浅拷贝仅复制对象的第一层属性，而不会复制嵌套对象的内部引用,因此嵌套对象内部的改变会影响到原始对象。
+      - ![alt text](../img/小诚互娱/image-47.png)
+      - ![alt text](../img/小诚互娱/image-48.png)
+    - 浅拷贝的方法
+      - 扩展运算符
+      - Object.assign()
+    - 深拷贝会递归复制对象及嵌套对象，创造一个全新的数据，不会影响原对象
+      - 手写递归
+      - JSON.parse + JSON.stringify(不包含函数和特殊对象的情况)
+        - ![alt text](../img/小诚互娱/image-49.png)
+        - ![alt text](../img/小诚互娱/image-50.png)
   - vue的响应式原理
+    - 数据劫持和依赖收集
   - vue2和vue3响应式原理的区别
-  - 深浅拷贝
+    - vue2用的是Obejct.defineProperty,vue3用的是Proxy和Reflect来监听数据变化
+  - computed
+    - 动态计算实例对象数据
+    - 缓存机制（只要当依赖数据发生变化才执行
+    - 优化
+      - lazy（首次访问才计算）
+      - cache（设置为false禁止缓存
+    - 不能和data里面的数据重名，重名会使data里面数据覆盖computed里面的计算属性
+  - watch
+    - 监听数据变化并执行一些副作用
+    - watch可以同时监听多个数据变化
   - v-model原理
-  - watch和computed区别
-  - vuex
+    - v-bind+@change
+  - vuex状态管理
+    - state
+    - getter
+    - mutation
+    - action
+    - module
+    - mapState mapGetters
   - vue-router
+    - 嵌套路由children
+    - query和params
+    - 全局路由守卫，独享路由守卫，组件路由守卫
+      - router.beforeEach,router.aferEach
+      - beforeRouteEnter beforeRouteUpdate beforeRouteLeave
+      - 可以在组件里面编写独享路由守卫
+      - 三个参数to，from，next(),next最重要
+      - 路由的两种模式
+        - hash
+          - 在 URL 中使用 # 符号来表示路由
+          - 地址栏井号斜杠后面的所有参数都是hash值 特点是不随http请求发给服务器
+        - history
+          - 不使用 # 符号，而是直接使用真实的 URL 路径
+          - 部署线上需要后端支持，解决刷新页面404问题
+  - git常用的指令

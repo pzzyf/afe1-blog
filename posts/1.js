@@ -1,30 +1,19 @@
-// require.js
 
-function requireData(url) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (url == 'afe1') {
-                resolve('afe1')
-            } else {
-                reject('error')
-            }
-        }, 1000)
-    })
+
+
+let a = {
+    name: 'afe1',
+    age: 18,
+    frends: {
+        one: 'kun',
+        tow: 'liang',
+        three: 'bo'
+    }
 }
 
-// main.js
+let b = JSON.parse(JSON.stringify(a))
 
-const promise = requireData('afe1')
-promise.then(
-    (res) => {
-        'res', res
-    },
-    (err) => {
-        'err', err
-    }
-)
+b.frends.three = '123'
 
-promise.catch(() => {})
-
-
-
+console.log(a)
+console.log(b)
