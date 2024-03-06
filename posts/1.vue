@@ -6,13 +6,12 @@
 
 <script>
 export default {
-
+    methods: {
+        foo() {
+            
+        },
+    }
 }
 </script>
 
-<style lang="scss" scoped>
-.bar {
-    display: flex;
-
-}
-</style>
+<style lang="scss" scoped></style>

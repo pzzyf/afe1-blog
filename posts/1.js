@@ -1,7 +1,26 @@
-let a = [1, 6, 3, 4, 5]
 
-let b = a.sort((a1, b1) => {
-    return b1 - a1
-})
 
-console.log(a, b)
+class Person {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+    running() {
+        console.log('person running')
+    }
+}
+
+class Student extends Person {
+    constructor(name, age, suo) {
+        super(name, age)
+        this.suo = suo
+    }
+    running() {
+        super.running()
+        console.log('afe1 running')
+    }
+}
+
+const afe1 = new Student('afe1', 18, '123')
+
+console.log(afe1.running())
